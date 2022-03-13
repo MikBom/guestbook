@@ -1,0 +1,17 @@
+{
+  "name": "herokuguestbook",
+  "version": "1.0.0",
+  "description": "herokuguestbook application",
+  "main": "guestbook.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node guestbook.js"
+  },
+  "keywords": [
+    "Heroku",
+    "guestbook",
+    "application"
+  ],
+  "author": "",
+  "license": "ISC"
+}

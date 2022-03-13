@@ -1,0 +1,56 @@
+<html>
+<!-- BOOTSRAP - Styling -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- more styling -->
+  <style>
+    div {
+      margin: 10px;
+    }
+    form {
+      border: 1px solid lightgrey;
+      padding: 10px;
+    }
+  </style>
+  <script>
+
+    </script>
+  <body>
+    <div style="margin-left: 20px;">
+      <h1>Guestbook project </h1>
+        <p>This is simple project<br>for guestbook.</p>
+      </div>
+      <hr>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Main page</a></li>
+          <li><a href="/guestbook">Guestbook</a></li>
+          <li><a href="/newmessage">New message</a></li>
+          <li><a href="/ajaxmessage">Ajax message</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div style="margin-left: 20px">
+    <div class="text-center">
+      <h2>New message page</h2>
+      <div class="form-group">
+      
+        
+            <form method="post" action="/newmessage">
+              Name <input type="text" name="name" onsubmit="required()">
+              Country <input type="text" name="country" onsubmit="required()"><br><br>
+              Message <input type="text" class="form-control" name="message" onsubmit="required()"><br>
+           <input type="submit" value="Submit">
+           </form>
+          </div>
+     
+      </div>
+    
+  
+  </body>
+</html>
