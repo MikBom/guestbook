@@ -88,7 +88,8 @@ app.get("*", function(req,res){
     res.status(404).send("Sivua ei löydy!");
 });
 
-//Using the port 8081
-app.listen(8081,function(){
-    console.log('Portti 8081');
-});
+//Using the port 3000 and can work in Heroku
+    app.listen(process.env.PORT || 3000, function() {
+        console.log('Server port 3000');
+        
+        });
